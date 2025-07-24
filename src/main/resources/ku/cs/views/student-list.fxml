@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.StudentListController">
+   <children>
+      <Label layoutX="123.0" layoutY="14.0" text="Student List" />
+      <ListView fx:id="studentListView" layoutX="24.0" layoutY="42.0" prefHeight="255.0" prefWidth="277.0" />
+      <Label layoutX="399.0" layoutY="42.0" text="Selected Student" />
+      <Label layoutX="386.0" layoutY="86.0" text="ID:" />
+      <Label layoutX="386.0" layoutY="114.0" text="Name:" />
+      <Label layoutX="386.0" layoutY="140.0" text="Score:" />
+      <Label layoutX="386.0" layoutY="168.0" text="Grade:" />
+      <Label fx:id="idLabel" layoutX="461.0" layoutY="86.0" text="Label" />
+      <Label fx:id="nameLabel" layoutX="461.0" layoutY="114.0" text="Label" />
+      <Label fx:id="scoreLabel" layoutX="461.0" layoutY="140.0" text="Label" />
+      <Label fx:id="gradeLabel" layoutX="461.0" layoutY="168.0" text="Label" />
+      <Button layoutX="-2.0" mnemonicParsing="false" onAction="#onBackButtonClick" text="Back" />
+      <TextField fx:id="giveScoreTextField" layoutX="389.0" layoutY="225.0" prefHeight="25.0" prefWidth="111.0" />
+      <Label fx:id="errorLabel" layoutX="390.0" layoutY="201.0" text="Give score" />
+      <Button layoutX="515.0" layoutY="225.0" mnemonicParsing="false" onAction="#onGiveScoreButtonClick" text="ok" />
+   </children>
+</AnchorPane>
